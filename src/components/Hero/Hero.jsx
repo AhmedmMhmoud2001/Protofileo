@@ -22,13 +22,15 @@ const Hero = () => {
     const darkMode = theme.state.darkMode;
     const transition = { duration: 2, type: 'spring' };
     return (
-        <Heroo>
+        <Heroo id='Heroo'>
             <HeroLeft>
                 <HeroName>
-                    <NameText
-                        style={{ color: darkMode ? 'white' : '' }}
-                    >{t('Hi! I Am')}</NameText>
-                    <NameText> {t('Ahmad El-Santawy')}</NameText>
+                    <NameText style={{ color: darkMode ? 'white' : '' }}>
+                        {t('Hi! I am')}
+                    </NameText>
+                    <NameText>
+                     {t('Ahmad El-Santawy')}
+                     </NameText>
                     <NameText
                         style={{ color: darkMode ? 'silver' : '' }}
                     > {t('I am a professional web developer offering custom development services using Node.js and React.js.')} 

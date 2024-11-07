@@ -10,7 +10,9 @@ const Footer = () => {
       <img src={Wave} alt="Wave" />
       <ContentFooter>
         <EmailFooter>
-          ahmedmahmoud2152001@gmail.com
+          <Links href="mailto:ahmedmahmoud2152001@gmail.com">
+            ahmedmahmoud2152001@gmail.com
+          </Links>
         </EmailFooter>
         <IconFooter>
         <Links href="https://www.linkedin.com/in/ahmed-mahmoud-mohammed-mohammed/">

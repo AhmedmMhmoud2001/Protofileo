@@ -5,11 +5,13 @@ export const Expirinc = styled.div`
       justify-content: center;
       gap:80px;
       height:30vh;
-      margin-bottom: 8rem;
+      padding-top:150px;
         @media (max-width: 480px) {
             flex-direction: column;
-            height: 60rem;
+            margin-bottom: -10rem;
+            height: 70rem;
             padding: 0;
+            gap:50px;
       }
     `;
 export const Achievement = styled.div`

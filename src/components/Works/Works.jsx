@@ -38,19 +38,19 @@ const Works = () => {
                     transition={{ duration: 3.5, type: 'spring' }}
                 >
                     <PrimCircle>
-                        <ImageCircle src={Upwork} alt />
+                        <ImageCircle src={Upwork} alt={""}/>
                     </PrimCircle>
                     <PrimCircle>
-                        <ImageCircle src={Fiverr} alt />
+                        <ImageCircle src={Fiverr} alt={""}/>
                     </PrimCircle>
                     <PrimCircle>
-                        <ImageCircle src={Amazon} alt />
+                        <ImageCircle src={Amazon} alt={""} />
                     </PrimCircle>
                     <PrimCircle>
-                        <ImageCircle src={Shopify} alt />
+                        <ImageCircle src={Shopify} alt={""} />
                     </PrimCircle>
                     <PrimCircle>
-                        <ImageCircle src={Facebook} alt />
+                        <ImageCircle src={Facebook} alt={""} />
                     </PrimCircle>
                 </MainCircle>
                 <CircleBack />

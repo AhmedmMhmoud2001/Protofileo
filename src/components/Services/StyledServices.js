@@ -2,18 +2,21 @@ import styled from 'styled-components';
 import { Btn } from '../GlobalStyled';
 import { motion } from 'framer-motion';
 export const Service = styled.div`
-  padding: 0 48px 0 48px;
+  padding: 50px 48px 0 48px;
   height:90vh;
   display: flex;
   margin-bottom: 126px;
   margin-top:144px ;
-    @media (max-width: 480px) {
-       margin-top:0 ;
+    
+
+  @media (max-width: 768px) {
+       margin-top:150px ;
        flex-direction: column;
        gap:5rem;
        height: 66rem;
-       padding: 0;
-      }
+       padding: 100px 0px 0px 0px ;
+}
+ 
 `;
 export const ServiceAwesome = styled.div`
   position: relative;
@@ -23,13 +26,48 @@ export const ServiceAwesome = styled.div`
 export const AwesomeText = styled.span`
   &:nth-of-type(1){
     color:var(--black);
-    font-size: 40px;
+    
     font-weight: bold;
+    @media (min-width: 1201px) {
+  font-size: 48px;
+}
+     @media (max-width: 1200px) {
+  font-size: 48px;
+}
+  @media (max-width: 1024px) {
+  font-size: 42px;
+}
+  @media (max-width: 768px) {
+  font-size: 33px;
+}
+  @media (max-width: 480px) {
+  font-size: 24px;
+}
+  @media (max-width: 320px) {
+  font-size: 24px;
+}
   }
   &:nth-of-type(2){
     color:var(--orange);
-    font-size: 40px;
     font-weight: bold;
+    @media (min-width: 1201px) {
+  font-size: 48px;
+}
+     @media (max-width: 1200px) {
+  font-size: 48px;
+}
+  @media (max-width: 1024px) {
+  font-size: 42px;
+}
+  @media (max-width: 768px) {
+  font-size: 33px;
+}
+  @media (max-width: 480px) {
+  font-size: 24px;
+}
+  @media (max-width: 320px) {
+  font-size: 24px;
+}
   }
   &:nth-of-type(3){
     color:var(--gray);
@@ -37,10 +75,13 @@ export const AwesomeText = styled.span`
     font-weight: normal;
     margin-top:16px;
     white-space: 1.5;
+    @media (max-width: 480px) {
+    font-size: 14px;
+    }
   }
   `;
 export const BtnAwesome = styled(Btn)`
-  width:150px;
+  width:200px;
   height: 40px;
   margin-top: 16px;
 `;
@@ -78,9 +119,6 @@ export const ServiceCards = styled.div`
   `;
 export const Container = styled(motion.div)`
     position: absolute;
-        @media (max-width: 480px) {
-            position: static;
-      }
     &:nth-of-type(1){
     left: 25rem;
   }
@@ -92,6 +130,12 @@ export const Container = styled(motion.div)`
     left: 20rem;
     top:22rem; 
   }
+      }
+             @media (max-width: 480px) {
+            position: static;
+            
+      }
+    
        
   `;
 export const LinksResume = styled.a`

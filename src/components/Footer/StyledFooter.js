@@ -22,8 +22,11 @@ export const ContentFooter = styled.div`
   gap: 4rem;
   color: white;
   font-size: 24px;
+  @media (max-width: 480px) {
+                  font-size: 20px;
+                  }
 `;
-export const EmailFooter = styled.span`
+export const EmailFooter = styled.div`
   
 `;
 export const IconFooter = styled.div`
@@ -32,4 +35,5 @@ export const IconFooter = styled.div`
 `;
 export const Links = styled.a`
 text-decoration: none;
+color: white;
 `;

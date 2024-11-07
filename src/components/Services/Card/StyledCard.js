@@ -22,11 +22,17 @@ export const ImgCard = styled.img`
 export const Heading = styled.span`
   font-weight: bold;
   font-size:20px;
+  @media (max-width: 480px) {
+            font-size:18px;
+      }
 `;
 export const Details = styled.span`
   color: var(--gray);
   font-size:16px;
   line-height: 1.5;
+  @media (max-width: 480px) {
+            font-size:14px;
+      }
 `;
 export const BtnService = styled.button`
   background: #ffffff;

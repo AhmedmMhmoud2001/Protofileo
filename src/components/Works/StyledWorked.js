@@ -2,15 +2,17 @@ import styled from 'styled-components';
 import { Btn } from '../GlobalStyled';
 import { motion } from 'framer-motion';
 export const Work = styled.div`
-  padding: 0 48px;
+  padding: 100px 48px;
   display: flex;
   height:90vh;
   margin-top: 64px;
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
           flex-direction: column;
-          height: 60rem; 
-          padding: 0;
-          gap:5rem;
+          align-items: center;
+          justify-content: center;
+          height: 50rem; 
+          padding: 30px 0px;
+          margin-top: -250px;
       }
 `;
 export const WorkAwesome = styled.div`
@@ -21,19 +23,56 @@ export const WorkAwesome = styled.div`
 export const AwesomeText = styled.span`
   &:nth-of-type(1){
     color:var(--black);
-    font-size: 40px;
     font-weight: bold;
+    @media (min-width: 1201px) {
+  font-size: 48px;
+}
+     @media (max-width: 1200px) {
+  font-size: 48px;
+}
+  @media (max-width: 1024px) {
+  font-size: 42px;
+}
+  @media (max-width: 768px) {
+  font-size: 33px;
+}
+  @media (max-width: 480px) {
+  font-size: 24px;
+}
+  @media (max-width: 320px) {
+  font-size: 24px;
+}
   }
   &:nth-of-type(2){
     color:var(--orange);
-    font-size: 40px;
     font-weight: bold;
+@media (min-width: 1201px) {
+  font-size: 48px;
+}
+     @media (max-width: 1200px) {
+  font-size: 48px;
+}
+  @media (max-width: 1024px) {
+  font-size: 42px;
+}
+  @media (max-width: 768px) {
+  font-size: 33px;
+}
+  @media (max-width: 480px) {
+  font-size: 24px;
+}
+  @media (max-width: 320px) {
+  font-size: 24px;
+}
   }
   &:nth-of-type(3){
     color:var(--gray);
     font-size: 16px;
     font-weight: normal;
     margin-top:16px;
+    @media (max-width: 480px) {
+           font-size: 14px;
+      }
   }
   `;
 export const BtnAwesome = styled(Btn)`
@@ -66,11 +105,17 @@ export const Blur = styled.div`
   `;
 export const WorkCircle = styled.div`
     position:relative;
-      @media (max-width: 480px) {
+    @media (max-width: 780px) {
             display: flex;
             align-items: flex-start;
             justify-content: start;
             transform: scale(0.7);
+      }
+      @media (max-width: 480px) {
+            display: flex;
+            align-items: flex-start;
+            justify-content: start;
+            transform: scale(0.6);
       }
   `;
 export const MainCircle = styled(motion.div)`

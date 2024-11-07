@@ -17,29 +17,41 @@ const Protofileo = () => {
   const { t} = useTranslation();
   return (
     <Protofilo className='portfolio' id='protofileo' >
-      <ProtfiloHeading
-        style={{ color: darkMode ? 'white' : '', }}
-      >{t('Recent Projects')}</ProtfiloHeading>
+      <ProtfiloHeading style={{ color: darkMode ? 'white' : '', }}>{t('Recent Projects')}</ProtfiloHeading>
       <ProtfiloHeading>{t('Protofileo')}</ProtfiloHeading>
       <Swiper
-        spaceBetween={30}
-        slidesPerView={3}
-        grabCursor={true}
-        className='portfolio-slider'
-      >
-        <SwiperSlide >
-          <ProtfiloImage src={One} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProtfiloImage src={Two} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProtfiloImage src={Three} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProtfiloImage src={Four} />
-        </SwiperSlide>
-      </Swiper>
+  spaceBetween={30}
+  grabCursor={true}
+  className="portfolio-slider"
+  breakpoints={{
+    // الشاشة الصغيرة جدًا (موبايل)
+    320: {
+      slidesPerView: 1,
+    },
+    // الشاشة المتوسطة (تابلت)
+    640: {
+      slidesPerView: 2,
+    },
+    // الشاشة الكبيرة (كمبيوتر)
+    1024: {
+      slidesPerView: 3,
+    },
+  }}
+>
+  <SwiperSlide>
+    <ProtfiloImage src={One} />
+  </SwiperSlide>
+  <SwiperSlide>
+    <ProtfiloImage src={Two} />
+  </SwiperSlide>
+  <SwiperSlide>
+    <ProtfiloImage src={Three} />
+  </SwiperSlide>
+  <SwiperSlide>
+    <ProtfiloImage src={Four} />
+  </SwiperSlide>
+</Swiper>
+
     </Protofilo>
   )
 }

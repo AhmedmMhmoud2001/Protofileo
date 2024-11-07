@@ -48,12 +48,12 @@ const Contact = () => {
                         className='input'
                         Required
                     />
-                    <ContactArea
-                        name='message'
-                        placeholder={t('Message')}
-                        className='input'
-                        Required
-                    />
+                   <ContactArea
+                   name='message'
+                   placeholder={t('Message')}
+                   className='input'
+                   required
+                     />
                     <ContactSubmit
                         type="submit"
                         value={t('Send')}

@@ -1,9 +1,13 @@
 import styled from 'styled-components';
 export const Contac = styled.div`
   padding: 0 3rem;
-  height: 80vh;
   display: flex;
-  margin-top: 10rem;
+  margin: 10rem 0rem;
+  
+   @media (max-width: 480px) {
+                  flex-direction: column;
+                  padding: 0 1rem;
+                                 }
 `;
 export const ContactAwesome = styled.div`
 flex: 1;
@@ -18,11 +22,17 @@ export const AwesomeText = styled.span`
     color:var(--black);
     font-size: 60px;
     font-weight: bold;
+    @media (max-width: 480px) {
+                  font-size: 30px;
+                  }
   }
   &:nth-of-type(2){
     color:var(--orange);
     font-size: 60px;
     font-weight: bold;
+    @media (max-width: 480px) {
+                  font-size: 30px;
+                  }
   }
 `;
 export const Blur = styled.div`
@@ -76,12 +86,13 @@ export const ContactEmail = styled.input`
 export const ContactArea = styled.textarea`
     width: 20rem;
     height: 4rem;
-    padding: 0 3rem;
-    outline: 0;
+    padding: 1rem; /* إزالة التكرار وجعلها بسيطة */
+    outline: none;
     border-radius: 8px;
     font-size: 16px;
     border: 2px solid var(--orange);
-     padding:1rem 1rem;
+    resize: none; /* منع التغيير في حجم حقل الكتابة إذا لم يكن ضرورياً */
+    z-index:50;
     `;
 export const ContactSubmit = styled.input`
   border-radius: 34px; 
@@ -91,6 +102,7 @@ export const ContactSubmit = styled.input`
    background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
    box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
    padding: 11px 26px 11px 26px;
+   z-index:50;
    transition: 0.5s all ;  
    &:hover {
     background: white;
